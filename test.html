@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth to Business Sandbox</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 15px 40px;
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: url('assets/y2b-bg.png') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-logo {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    .hero h3 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: #007bff;
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: #007bff;
+    }
+
+    /* Content Section */
+    section {
+      padding: 80px 20px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #fff;
+    }
+
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-content">
+    <a href="#">
+      <img src="assets/aiesec-logo.png" alt="AIESEC Logo" class="nav-logo">
+    </a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Partner With Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="assets/y2b-logo.png" alt="Y2B Logo" class="hero-logo">
+      <h3>Digitalize to Sustain — The Future of Entrepreneurship</h3>
+      <h2>Where Ambition Meets Opportunity!</h2>
+      <p>November 2025</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Register</a>
+        <a href="#" class="btn-secondary">More Info</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rest of the page -->
+  <section>
+    <h2>About Us</h2>
+    <p>Our mission and values...</p>
+  </section>
+
+  <footer>
+    <img src="assets/aiesec-logo.png" alt="AIESEC Logo">
+    <p>Copyright © 2025 All rights reserved | Powered by AIESEC in Cambodia</p>
+    <p>Made by <a href="#">Khong Pichsambat</a></p>
+  </footer>
+</body>
+</html>
